@@ -8,8 +8,13 @@ const dummyContacts = [
   { id: 3, name: "BB-8", phone: "888-888-8888", email: "bb8@droids.com" },
 ];
 
+//set variables for selected row (ContactRow)
+//targeted by id of each row (object)
+//when selected, will render selected ContactRow and details
+
 export default function ContactList() {
   const [contacts, setContacts] = useState(dummyContacts);
+  //
   //   console.log("Contacts: ", contacts);
   useEffect(() => {
     async function fetchContacts() {
