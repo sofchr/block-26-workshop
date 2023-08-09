@@ -3,7 +3,7 @@ import { useState } from "react";
 import ContactList from "./ContactList";
 
 export default function ContactRow({ bubbles, pickId }) {
-  //{contact} is accessing the object in ContactList.jsx
+  //{bubbles, pickId} is accessing the object in ContactList.jsx
   return (
     <tr
       onClick={() => {

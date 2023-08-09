@@ -36,6 +36,13 @@ export default function SelectedContact({ pickMyId, myId }) {
         <p>{contact.address?.city}</p>
         <p>{contact.address?.zipcode}</p>
       </div>
+      <button
+        onClick={() => {
+          pickMyId(null);
+        }}
+      >
+        Back to Contact List
+      </button>
     </div>
   );
 }
